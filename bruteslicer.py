@@ -110,7 +110,7 @@ banner = """______            _       _____ _ _
                                                  / / '/:::/ /
 A Pyrit Wrapper by Clement Maillioux.           / /__/::.'_/
 			                       / /  \__.-'
-                                   v 0.10     / /
+                                   v 0.11     / /
                                                /"""
 
 
