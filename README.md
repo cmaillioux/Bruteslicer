@@ -33,7 +33,7 @@ Then, put this file ___in the same folder___ than the "bruteslicer.py" script.
 
 ### What should I configure?
 Once the script is executed, you will have to answer to several questions in order to configure the tool. Here is a summary : 
-__Resuming previously stopped bruteslicing :__ This is possible by answering "y" to the first question of the tool : `[?] Resume from a previously stopped Bruteslicing ? (y/n) : y`.
+__Resuming previously stopped bruteslicing :__ This is possible by answering "y" to the first question of the tool : `[?] Resume from a previously stopped Bruteslicing ? (y/n) : y`. This resuming option relies on two files created by the tool, named tool1.resume and tool2.resume. If these files aren't in the same folder that the script, it won't be able to resume a previous bruteslice, and will exit with the following error :  `[!] Wrong value or 'tool1.resume' file not present on disk`.
 
 __Creating parameters for a new bruslicing :__ If you choose to answer not to resume from a previous session, you will have to specify 
 - the name of the access point, for instance `[?] ESSID of the victim Access Point : KlemSSID`
