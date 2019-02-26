@@ -94,7 +94,7 @@ def check_hardware():
 	print cmdRes + '\n'
 
 ######## Constants
-charset = 'a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 [ \\ ] ^ - ! " \# $ % & \' ( ) * + , _ . / : ; < = > ? @ ` { } |'
+charset = 'a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 [ \\ ] ^ - ! " $ % & \' ( ) * + , _ . / : ; < = > ? @ ` { } |'
 charslist = charset.split(' ')
 lx = 0
 endOfList = 0
@@ -144,7 +144,7 @@ try :
                 resumeParams.close()
 
 		try : 
-		        sizeInput = int(raw_input("\033[1;36m [?]" + "\033[0;0m Size limit of dictionnaries on disk (in Mb) : "))
+		        sizeInput = int(raw_input("\033[1;36m [?]" + "\033[0;0m Max space allowed on disk for bruteforcing operations (in Mb) : "))
 			resumeParams = open("tool2.resume","a")
 			resumeParams.write(str(sizeInput)+";")
 			resumeParams.close()
@@ -153,7 +153,7 @@ try :
 		        sys.exit(1)
 		sizeMax = sizeInput * 1000000
 
-		nomfichier = str(raw_input("\033[1;36m [?]" + "\033[0;0m Max allowed space on disk for bruteslicing operations : "))
+		nomfichier = str(raw_input("\033[1;36m [?]" + "\033[0;0m Name of the generated wordlist : "))
 		resumeParams = open("tool2.resume","a")
 		resumeParams.write(nomfichier)
 		resumeParams.close()
