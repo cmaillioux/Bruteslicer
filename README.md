@@ -32,6 +32,7 @@ This script uses Pyrit to crack WPA handshakes. In order for the bruteforce to s
 Then, put this file ___in the same folder___ than the "bruteslicer.py" script.
 
 ### What should I configure?
+Once the script is executed, you will have to answer to several questions in order to configure the tool. Here is a summary : 
 __Resuming previously stopped bruteslicing :__ This is possible by answering "y" to the first question of the tool : `[?] Resume from a previously stopped Bruteslicing ? (y/n) : y`.
 
 __Creating parameters for a new bruslicing :__ If you choose to answer not to resume from a previous session, you will have to specify 
@@ -41,7 +42,8 @@ __Creating parameters for a new bruslicing :__ If you choose to answer not to re
 - the max size allowed for all the bruteslicing operations. This include the wordlist, the pyrit database, its conversion with batches, etc. This tool will manage all `[?] Max space allowed on disk for bruteforcing operations (in Mb) : 400`
 - The name of the wordlists which are created before beeing processed as a pyrit database `[?] Name of the generated wordlist : wrdlst`
 
-__Modifying the charset__ The tool currently runs with ASCII chars.
+__Modifying the charset__ The tool currently runs with ASCII chars. This is the only "configuration" which doesn't rely on questions starting the tool. If you want to modify the charset, you will have to edit the line 97 of the script (the "charset" variable) and modify the characters. Each character is separated by a space. 
+In order to prevent any disk space overflow, if any non-ASCII character is detected, the max wordlist length is adapted using worst case scenario (chars coded on 3 bytes and on all lines). This will only increase the number of slicing iterations.
 
 ## Authors
 The author of the Bruteslicer wrapper tool is Clément Maillioux. 
