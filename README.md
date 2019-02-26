@@ -3,12 +3,14 @@
 # Bruteslicer
 A pyrit wrapper which manages bruteforce wordlists generation and disk space.
 
-## Description
+## Getting Started
+
+### Description
 a
 
-## Prerequisite
+### Prerequisite
 b
 
-## Installing
+### Installing
 c 
 using `this command`
