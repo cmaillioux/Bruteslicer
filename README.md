@@ -29,10 +29,22 @@ Please check the manual for detailed usage instructions.
 ## Manual
 ### Before starting
 This script uses Pyrit to crack WPA handshakes. In order for the bruteforce to succeed, you must have a captured handshake in a ".cap" file. Such a file may be generated with the [aircrack-ng suite](https://www.aircrack-ng.org/).
-Then, put this file ___in the same folder___ than the "bruteslicer.py" script. 
+Then, put this file ___in the same folder___ than the "bruteslicer.py" script.
+
+### What should I configure?
+__Resuming previously stopped bruteslicing :__ This is possible by answering "y" to the first question of the tool : `[?] Resume from a previously stopped Bruteslicing ? (y/n) : y`.
+
+__Creating parameters for a new bruslicing :__ If you choose to answer not to resume from a previous session, you will have to specify 
+- the name of the access point, for instance `[?] ESSID of the victim Access Point : KlemSSID`
+- the length of the password you try to bruteslice, 8 chars long is a minimum for WPA passphrases : `[?] Requested length of passphrase to Bruteslice : 8`. Please note that the tool currently not increase the password length alone. If no password is found for an 8 chars long passphrase, then a brand new bruteslicing must be started with 9 in this parameter.
+- the .cap file name that must be analyzed : `[?] .cap Filename to use (Should be in the same folder than "bruteslicer.py)". Type "xxxxxx.cap" : KlemSSID-02.cap` It must be in the same folder than the script.
+- the max size allowed for all the bruteslicing operations. This include the wordlist, the pyrit database, its conversion with batches, etc. This tool will manage all `[?] Max space allowed on disk for bruteforcing operations (in Mb) : 400`
+- The name of the wordlists which are created before beeing processed as a pyrit database `[?] Name of the generated wordlist : wrdlst`
+
+__Modifying the charset__ The tool currently runs with ASCII chars.
 
 ## Authors
-The author of the Bruteslicer wrapper tool is Clément MAILLIOUX. 
+The author of the Bruteslicer wrapper tool is Clément Maillioux. 
 
 ## License
 This script is Licensed under GNU GPL v3. Please refer to LICENSE file for more details.
