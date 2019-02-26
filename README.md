@@ -1,8 +1,5 @@
-# Disclaimer
-- This site contains materials that can be potentially damaging or dangerous.
-- If you do not fully understand something in this script or its purpose, then do not try to use it. 
-- Please refer to the laws in your province/country before accessing, using, or in any other way utilizing these materials.
-- These materials are for educational and research purposes only.
+## Disclaimer
+*This site contains materials that can be potentially damaging or dangerous. If you do not fully understand something in this script or its purpose, then do not try to use it. Please refer to the laws in your province/country before accessing, using, or in any other way utilizing these materials. These materials are for educational and research purposes only.*
 
 # Bruteslicer
 A pyrit wrapper which manages bruteforce wordlists generation and disk space.
