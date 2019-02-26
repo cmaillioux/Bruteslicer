@@ -12,12 +12,13 @@ To avoid this problem, the Bruteslicer will manage disk space for you and cut th
 It generates wordlists within user specified limits before feeding pyrit with it and then clean the files. Then it generated another "slice" of the wordlist which matches size limits, before cleaning it and do it again, and again, until it reaches the end of the charset or finds a matching password.
 
 ### Prerequisite
-* As this tool uses pyrit to take advantage of GPUs for password cracking, you must have pyrit installed on your system before using the Bruteslicer tool.
+* As this tool is a wrapper for pyrit, you must have pyrit installed on your system before using the Bruteslicer tool.
+* Your Graphic Card, OpenCL or CUDA, must be installed and configured so that Pyrit can use it.
 * Bruteslicer is a python script designed to run with python 2.7.
 * Python modules : itertools, datetime, os, subprocess, sys, re
 
 ### Installing
-c 
-using `this command`
+Installing the Bruteslicer is easy with git, just type : 
+`git clone `
 
 ## Manual
