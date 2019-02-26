@@ -9,7 +9,7 @@ A pyrit wrapper which manages bruteforce wordlists generation and disk space.
 a
 
 ### Prerequisite
-b
+As this tool uses pyrit to take advantage of GPUs for password cracking, you must have pyrit installed on your system before using the Bruteslicer Tool.
 
 ### Installing
 c 
